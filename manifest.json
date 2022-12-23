@@ -1,0 +1,14 @@
+{
+    "name": "TabTime",
+    "version": "1.0.0",
+    "description": "Logs time spent on websites",
+    "manifest_version": 3,
+    "author": "Kayvon Samavati",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "TabTime"
+    },
+		"permissions": [
+			"tabs"
+		]
+}
