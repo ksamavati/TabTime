@@ -5,10 +5,15 @@
     "manifest_version": 3,
     "author": "Kayvon Samavati",
     "action":{
-        "default_popup": "index.html",
+        "default_popup": "popup.html",
         "default_title": "TabTime"
+    }, 
+    "background": {
+        "service_worker": "background.js"
     },
-		"permissions": [
-			"tabs"
-		]
+	"permissions": [
+		"tabs",
+        "storage",
+        "unlimitedStorage"
+	]
 }

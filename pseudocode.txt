@@ -1,0 +1,22 @@
+Background:
+    listen for changes to current tab name
+
+    On tab change:
+        Prev entry:
+            endTime: CurrentTime
+        Log a new DB entry with:
+            Tab name: tab.title
+            Tab domain: tab.title (REGEX to get the domain)
+            startTime: Current time
+            favicon: tab.favicon
+
+
+    scan for window going out-of-focus
+    On out-of-focus [and user setting flag true]:
+        Prev entry:
+            endTime: CurrentTime
+
+Headsup:
+    Initialize:
+        get latest DB entry:
+            set tab
