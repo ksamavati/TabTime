@@ -8,9 +8,9 @@ async function fetchData() {
 fetchData();
 
 function twoDigit(num) {
-  num = num.toString();
-  while (num.length < 2) num = "0" + num;
-  return num;
+	num = num.toString();
+	while (num.length < 2) num = "0" + num;
+	return num;
 }
 
 async function getCurrentTab() {
